@@ -147,7 +147,7 @@ const CommissionCard = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.1 }}
       className="bg-white rounded-lg shadow-soft w-full"
-      style={{ padding: '16px' }}
+      style={{ padding: '16px', marginTop: '0px' }}
     >
       <div className="flex items-center justify-between mb-4">
         <div>

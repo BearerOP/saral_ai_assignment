@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { ROUTES } from './constants/routes';
 import MainLayout from './layouts/MainLayout';
 import HomePage from './pages/Home';
+import DummyPage from './pages/Dummy';
 import PostsPage from './pages/Posts';
 import AssetsPage from './pages/Assets';
 import UploadsPage from './pages/Uploads';
@@ -31,6 +32,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<HomePage />} />
+          <Route path={ROUTES.DUMMY} element={<DummyPage />} />
           <Route path={ROUTES.POSTS} element={<PostsPage />} />
           <Route path={ROUTES.ASSETS} element={<AssetsPage />} />
           <Route path={ROUTES.UPLOADS} element={<UploadsPage />} />
